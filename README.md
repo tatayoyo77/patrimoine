@@ -22,6 +22,8 @@ Le fichier persistence.xml est incomplet, basez vous sur vos connaissances et le
 
 Corriger également le nom de l'unité de persistence en vous basant sur le nom utilisé dans **VilleJpaTest**
 
+:question: Observer une évolution dans le message d'erreur rencontré lors de l'exécution du test **VilleJpaTest** qui peut vous permettre de penser que votre configuration est pertinente.
+
 ## Etape 4
 
 Enrichir la classe Ville en mettant en place le mapping avec la table CITIES en utilisant les annotations JPA.
