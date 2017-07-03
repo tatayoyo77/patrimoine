@@ -5,4 +5,4 @@ Matérialiser dans votre workspace Eclipse votre propre copie du projet Maven pr
 Pour ce faire, vous pouvez décider de :
 
 - jouer complètement le jeu de l'utilisation de Git/Github (fork, clone)
-- vous passez de Git et simplement télécharger le contenu du dépôt
+- vous passer de Git et simplement télécharger le contenu du dépôt
