@@ -69,4 +69,14 @@ Dans le package *co.simplon.poleEmploi.patrimoine.dao*, définir une interface *
 
 Créer une classe **MonumentJpaDao** dans le package *co.simplon.poleEmploi.patrimoine.dao* qui va implémenter l'interface **MonumentDao**. Vous pouvez vous inspirer du code présent dans **VilleJpaTest** pour réaliser l'implémentation.
 
-Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler la méthode *Ville getVilleById(Long id);* à partir de l'id passé en argument du programme, et afficher une représentation textuelle de la ville obtenue dans la console.
+Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler la méthode *Monument getMonumentById(Long id);* à partir de l'id passé en argument du programme, et afficher une représentation textuelle du monument obtenu dans la console.
+
+:question: Avez-vous affiché les informations de la ville dans lequel se trouve le monument ?
+
+## Etape 10
+
+Ajouter à l'interface **MonumentDao** une méthode *void deleteMonumentById(Long id);* et réaliser son implémentation dans **MonumentJpaDao**.
+
+Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler la méthode *void deleteMonumentById(Long id)* à partir de l'id passé en argument du programme.
+
+:question: Avez-vous vérifié si le monument a été supprimé mais que la ville n'a (évidemment) pas été supprimée de son côté ?
