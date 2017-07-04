@@ -35,3 +35,20 @@ Votre mapping pourra être considéré comme valide à partir du moment où **Vi
 ## Etape 5
 
 Enrichir le test unitaire et mapping pour également couvrir la latitude et la longitude
+
+## Etape 6
+
+Ajouter dans Eclipse la "Vue" **Data Source Explorer** qui vous permet de vous connecter à la base de données et de l'explorer.
+Dans cette vue, sur l'élément représentant votre connexion vous pouvez via clic droit > Open SQL Scrapbook ouvrir une fenêtre vous permettant d'exécuter une requête SQL.
+
+Exécuter une requête via ce client intégré et constater que le résultat est le même que celui que vous auriez obtenu avec un client SQL classique.
+
+## Etape 7
+
+Utiliser la fonction **Generate Entities** from Table de **JPA Tools** pour générer l'entité **Monument** (ne pas se préoccuper de la relation avec la ville pour l'instant).
+
+Observer le résultat et le comparer avec votre mapping de la classe **Ville**, puis écrire un nouveau test unitaire **MonumentJpaTest** à l'image du test unitaire déjà existant pour les villes.
+
+Une fois le test passant, en profiter pour essayer de refactorer la classe **Monument** à votre goût
+
+
