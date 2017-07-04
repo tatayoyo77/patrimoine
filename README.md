@@ -62,3 +62,11 @@ Une fois que vous êtes satisfait de cette modélisation, enrichissez l'une des 
 Mettez à jour votre mapping JPA afin de configurer la (ou les) relation(s) mise(s) en place et faire passer le nouveau test unitaire (sans régression sur les tests existants).
 
 :question: Avez-vous modélisé une relation unidirectionnelle ou bi-directionnelle ?
+
+## Etape 9
+
+Dans le package *co.simplon.poleEmploi.patrimoine.dao*, définir une interface **MonumentDao** avec la méthode suivante : *Ville getVilleById(Long id);*
+
+Créer une classe **MonumentJpaDao** dans le package *co.simplon.poleEmploi.patrimoine.dao* qui va implémenter l'interface **MonumentDao**. Vous pouvez vous inspirer du code présent dans **VilleJpaTest** pour réaliser l'implémentation.
+
+Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler la méthode *Ville getVilleById(Long id);* à partir de l'id passé en argument du programme, et afficher une représentation textuelle de la ville obtenue dans la console.
