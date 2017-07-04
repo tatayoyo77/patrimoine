@@ -80,3 +80,9 @@ Ajouter à l'interface **MonumentDao** une méthode *void deleteMonumentById(Lon
 Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler la méthode *void deleteMonumentById(Long id)* à partir de l'id passé en argument du programme.
 
 :question: Avez-vous vérifié si le monument a été supprimé mais que la ville n'a (évidemment) pas été supprimée de son côté ?
+
+## Etape 11
+
+Enrichir le fichier **persistence.xml** avec la propriété *hibernate.show_sql* à la valeur *true* et reexecuter le programme **GestionnairePatrimoine**
+
+Observer les requêtes SQL exécutées par JPA.
