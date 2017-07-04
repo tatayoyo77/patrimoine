@@ -61,4 +61,4 @@ Une fois que vous êtes satisfait de cette modélisation, enrichissez l'une des 
 
 Mettez à jour votre mapping JPA afin de configurer la (ou les) relation(s) mise(s) en place et faire passer le nouveau test unitaire (sans régression sur les tests existants).
 
-:question: Avez-vous modéliser une relation unidirectionnelle ou bi-directionnelle ?
+:question: Avez-vous modélisé une relation unidirectionnelle ou bi-directionnelle ?
