@@ -30,6 +30,8 @@ Enrichir la classe Ville en mettant en place le mapping avec la table CITIES en 
 
 Votre mapping pourra être considéré comme valide à partir du moment où **VilleJpaTest** sera passant (ou le résultat de la commande **mvn clean test** en SUCCESS)
 
+:question: Avez vous essayé de mettre des annotations à la fois sur les attributs et les getters de la classe **Ville** ?
+
 :question: Observer la structure de la classe **VilleJpaTest**, en particulier la façon dont est déclarée la méthode de test ainsi que les instructions utilisées pour vérifier la bonne correspondance entre le résultat attendu et le résultat obtenu.
 
 ## Etape 5
@@ -51,4 +53,12 @@ Observer le résultat et le comparer avec votre mapping de la classe **Ville**, 
 
 Une fois le test passant, en profiter pour essayer de refactorer la classe **Monument** à votre goût
 
+## Etape 8
 
+Matérialiser la relation entre les classes **Ville** et **Monument** au sens Java.
+
+Une fois que vous êtes satisfait de cette modélisation, enrichissez l'une des classes de test afin d'ajouter un nouveau scénario dont l'objectif sera de tester que la relation est bien chargée. L'objectif est que ce nouveau test compile mais qu'il ne soit pas passant (dans la mesure où le mapping n'a pas encore été enrichi).
+
+Mettez à jour votre mapping JPA afin de configurer la (ou les) relation(s) mise(s) en place et faire passer le nouveau test unitaire (sans régression sur les tests existants).
+
+:question: Avez-vous modéliser une relation unidirectionnelle ou bi-directionnelle ?
