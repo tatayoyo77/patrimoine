@@ -65,13 +65,13 @@ Mettez à jour votre mapping JPA afin de configurer la (ou les) relation(s) mise
 
 ## Etape 9
 
-Dans le package *co.simplon.poleEmploi.patrimoine.dao*, définir une interface **MonumentDao** avec la méthode suivante : *Ville getVilleById(Long id);*
+Dans le package *co.simplon.poleEmploi.patrimoine.dao*, définir une interface **MonumentDao** avec la méthode suivante : *Monument getVMonumentById(Long id);*
 
 Créer une classe **MonumentJpaDao** dans le package *co.simplon.poleEmploi.patrimoine.dao* qui va implémenter l'interface **MonumentDao**. Vous pouvez vous inspirer du code présent dans **VilleJpaTest** pour réaliser l'implémentation.
 
 Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler la méthode *Monument getMonumentById(Long id);* à partir de l'id passé en argument du programme, et afficher une représentation textuelle du monument obtenu dans la console.
 
-:question: Avez-vous affiché les informations de la ville dans lequel se trouve le monument ?
+:question: Avez-vous affiché les informations de la ville dans laquelle se trouve le monument ?
 
 ## Etape 10
 
