@@ -86,3 +86,19 @@ Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler
 Enrichir le fichier **persistence.xml** avec la propriété *hibernate.show_sql* à la valeur *true* et reexecuter le programme **GestionnairePatrimoine**
 
 Observer les requêtes SQL exécutées par JPA.
+
+## Etape 12
+
+Ajouter à l'interface **MonumentDao** une méthode *Monument createMonument(Monument monument);* et réaliser son implémentation dans **MonumentJpaDao**.
+
+Enrichir la méthode *main* de la classe **GestionnairePatrimoine** pour appeler la méthode *Monument createMonument(Monument monument);* avec un monument créé pour l'occasion
+
+:question: Avez-vous vérifié que l'instance de **Monument** renvoyée par la méthode *createMonument* comportait un id qui correspond à celui positionné par la base de données de façon automatique ?
+
+## Etape 13 (Bonus, sujet plus avancé)
+
+Prendre connaissance des tables VISITORS et VISITS, comprendre leur utilité et créer en SQL des données en lien avec un monument de votre choix.
+
+Enrichir le modèle métier Java, son mapping avec la base de données, et écrire une méthode de test ciblant les données créées afin de valider la cohérence du mapping.
+
+:question: Avez-vous modélisé une relation unidirectionnelle ou bi-directionnelle ?
