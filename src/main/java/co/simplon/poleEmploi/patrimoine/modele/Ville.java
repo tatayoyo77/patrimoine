@@ -12,7 +12,8 @@ import javax.persistence.Table;
 public class Ville {
 
 	@Id
-	@GeneratedValue ( strategy = GenerationType.IDENTITY )
+	@GeneratedValue ( strategy = GenerationType.AUTO )
+	@Column (name="ID", updatable = false, nullable = false)
 	private Long id;
 	@Column (name = "NAME")
 	private String nom;
@@ -51,5 +52,10 @@ public class Ville {
 
 	public void setLatitude(double latitude) {
 		this.latitude = latitude;
+	}
+	
+	@Override
+	public String toString() {
+		return "Ville [id=" + id + ", nom=" + nom + ", latitude=" + latitude + ", longitude=" + longitude + "]";
 	}
 }
